@@ -1,0 +1,48 @@
+application: ev-database
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+  - url: /
+    script: main.app
+  - url: /img
+    static_dir: img
+  - url: /login
+    script: main.app
+  - url: /about
+    script: main.app
+  - url: /login-verify
+    script: main.app
+  - url: /userdashboard
+    script: main.app
+  - url: /viewev
+    script: main.app
+  - url: /addev
+    script: main.app
+  - url: /addevsubmit
+    script: main.app
+  - url: /deleteev
+    script: main.app
+  - url: /deleteevdata
+    script: main.app
+  - url: /compareev
+    script: main.app
+  - url: /compareevsubmit
+    script: main.app
+  - url: /rateev
+    script: main.app
+  - url: /rateevfind
+    script: main.app
+  - url: /submitevrating
+    script: main.app
+  - url: /scoreev
+    script: main.app
+  - url: /scoreevfind
+    script: main.app
+  - url : /reviewev
+    script : main.app
+  - url : /reviewevdevice
+    script: main.app
+  - url : /adddevicereview
+    script: main.app
+    

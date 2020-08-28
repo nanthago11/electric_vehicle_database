@@ -1,0 +1,59 @@
+</html>
+<html lang="en">
+<head>
+    <title>EV Database</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+
+
+    </SCRIPT>
+</head>
+<body onload="noBack();"
+      onpageshow="if (event.persisted) noBack();" onunload="">
+<img src="{{url_for('static', filename='logo.png')}}">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">EV Database</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1><b>Electric Vehicles</b></h1>
+    <p style="font-family:comic sans ms;font-size:20px">An electric vehicle, also called an EV, uses one or more
+        electric motors or traction motors for propulsion. An
+        electric vehicle may be powered through a collector system by electricity from off-vehicle sources, or may be
+        self-contained with a battery, solar panels or an electric generator to convert fuel to electricity. EVs
+        include, but are not limited to, road and rail vehicles, surface and underwater vessels, electric aircraft and
+        electric spacecraft.
+
+        EVs first came into existence in the mid-19th century, when electricity was among the preferred methods for
+        motor vehicle propulsion, providing a level of comfort and ease of operation that could not be achieved by the
+        gasoline cars of the time. Modern internal combustion engines have been the dominant propulsion method for motor
+        vehicles for almost 100 years, but electric power has remained commonplace in other vehicle types, such as
+        trains and smaller vehicles of all types.
+
+        Commonly, the term EV is used to refer to an electric car. In the 21st century, EVs saw a resurgence due to
+        technological developments, and an increased focus on renewable energy. A great deal of demand for electric
+        vehicles developed and a small core of do-it-yourself (DIY) engineers began sharing technical details for doing
+        electric vehicle conversions. Government incentives to increase adoptions were introduced, including in the
+        United States and the European Union.</p>
+    <center><img src="{{url_for('static', filename='ev.jpg')}}"></center>
+</div>
+
+</body>
+
+
+</html>
